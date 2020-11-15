@@ -57,6 +57,13 @@ color: #fff;
     right: 0;
     top: 0;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8417a0db9d5be7479cf5fdb7eb3c7332e356254a
+>>>>>>> 869d4c5e359937ba91fd79f345c6a29214ee5971
 /*  搜索框*/
 .nav .search-shopcart-order .search-input .search{
     width: 390px;
@@ -81,6 +88,7 @@ color: #fff;
     border: 1px solid #ccc;
     font-size: 12px;
     color: #333;
+<<<<<<< HEAD
 }
 /*  第一个购物车按钮*/
 .nav .search-shopcart-order .shopcart-order button:nth-child(1){
@@ -90,6 +98,17 @@ color: #fff;
     background-repeat: no-repeat;
     background-position: -6px -44px;
 }
+=======
+}
+/*  第一个购物车按钮*/
+.nav .search-shopcart-order .shopcart-order button:nth-child(1){
+    background-color: #ff6700;
+    color: #fff;
+    background-image: url(../img/bgicon.png);
+    background-repeat: no-repeat;
+    background-position: -6px -44px;
+}
+>>>>>>> 8417a0db9d5be7479cf5fdb7eb3c7332e356254a
 /*  购物车图标*/
 /*  购物车文字*/
 /*  购物车数量*/
