@@ -105,5 +105,41 @@ $('.promotion  .promotion-title ul li').mouseenter(function(){
         'left': -index*1170
     },300)
 })
+/*二维码滑出*/
+$('.qr-code .ticket').hover(function (){
+    //让二维码滑出来
+    $('.qr-code div').stop(true).animate({
+        left:'-100px'
+    })
+}, function(){
+    //让二维码收回去
+    $('.qr-code div').stop(true).animate({
+        left:'0'
+    })
+})
 
+/*顶部搜索框交互*/
+       // 返回顶部
+       $(document).scroll(function(){
+        //获得顶部的位置
+        var topDistance=$('html, body').scrollTop();
+        //判断
+        if(topDistance>500){
+            $('.top-search-box').slideDown(300);
+        }else{
+            $('.top-search-box').slideUp(300);
+        }
+    })
+    /*楼梯跳转*/
+    $('.floor li').click(function(){
+        //获得索引
+        var index=$(this).index();
+        //选中每一个板块到顶部的偏移
+        var topOffset=$('.floorBox').eq(index).offset().top;
+
+        //让滚动条滚到这个位置
+        $('html, body').animate({
+            scrollTop:topOffset -50
+        })
+    })
 })
